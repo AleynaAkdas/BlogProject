@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ortak.css">
+    <link rel="stylesheet" href="/components/bread.css">
+    <link rel="stylesheet" href="/components/navbar.css">
+    <link rel="stylesheet" href="/components/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb px-4 py-2 d-flex mb-0">
+            <li class="breadcrumb-item fw-medium">
+                <a class="bread-a" href="/html/index.html">Anasayfa</a>
+            </li>
+            <li class="breadcrumb-item active bread-page" aria-current="page">Css</li>
+        </ol>
+    </nav>
+
+    <div class="container-fluid p-0 position-relative">
+        <img src="/img/violin.png" alt="Violin" class="img-fluid hero-img">
+        <div class="hero-text">
+            <h1 class="display-5 fw-normal">Aleyna</h1>
+            <h1 class="display-5 fw-normal">Akdaş</h1>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/index.html">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Zihindekiler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Karanlık Köşe</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Yazılım
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/pages/yazilim/html.html">Html</a></li>
+                                <li><a class="dropdown-item" href="/pages/yazilim/css.html">Css</a></li>
+                                <li><a class="dropdown-item" href="/pages/yazilim/bootstrap.html">Bootstrap</a></li>
+                                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid px-5 my-5">
+        <div class="row g-5 align-items-center justify-content-between"
+            style="line-height: 28px; letter-spacing: 0.4px; margin: 0 0 6%;">
+            <div class="col-lg-6 col-md-12 px-4">
+                <h2 class="mb-4">Css</h2>
+                <p class="mb-3 text-muted">
+                    HTML’le dijital bir dünya inşa etmeye başlamıştım ama ne zaman ki CSS ile tanıştım, o dünya renk
+                    kazandı. Başta sadece yazıları renklendirmeye çalışıyordum. Sonra “bir kutu neden bu kadar sağda?”
+                    diye sorarken `margin`, `padding` gibi terimlerle karşılaştım. Her biri bana hem estetik hem de
+                    sabırla ilgili bir şey öğretiyordu.
+                </p>
+                <p class="mb-3 text-muted">
+                    İlk başta basit görünüyordu. Renk veriyorsun, font değiştiriyorsun… bu kadar mıydı? Ama bir süre
+                    sonra fark ettim ki CSS, bir sayfanın tüm ruhunu belirliyordu. Hangi rengin nerede olacağı, bir
+                    yazının ne kadar boşlukla nefes alacağı, bir butonun kullanıcıya nasıl hissettireceği… Hepsi CSS’in
+                    kontrolündeydi.
+                </p>
+                <p class="mb-3 text-muted">
+                    En çok zorlandığım şey hizalamaydı. Kutular bir türlü istediğim yerde durmuyordu. `display: flex`
+                    yazınca çözülecek sanmıştım ama `justify-content`, `align-items`, `gap`, `flex-wrap` gibi
+                    kavramlarla tanışınca işin büyüklüğünü anladım. CSS bir “güzellik sanatı” gibiydi ama aynı zamanda
+                    çok titizdi. Duygularımı yansıtan bir arayüz yaparken, kuralları da ihmal edemezdim.
+                </p>
+                <p class="mb-3 text-muted">
+                    Zamanla CSS bana tasarımın sadece görüntü olmadığını öğretti. Her gölgenin bir anlamı, her rengin
+                    bir duygusu vardı. Kimi zaman bir `hover` efektiyle bir kullanıcıyı gülümsettiğimi hissettim. Kimi
+                    zaman `transition` ile geçişleri yumuşatıp insanlara “burası senin için düşünülmüş” dedirttim.
+                    Küçücük detayların büyük farklar yarattığını CSS sayesinde öğrendim.
+                </p>
+                <p class="mb-3 text-muted">
+                    Ama CSS sabır da isterdi. Çünkü bazen küçük bir hatada tüm düzen bozulur, minik bir eksiklik
+                    sayfanın dengesini altüst edebilirdi. O yüzden CSS ile çalışmak biraz da hayatla yüzleşmek gibiydi.
+                    Denge, uyum ve sadelik... En çok bunları öğrenmiştim.
+                </p>
+                <p class="mb-3 text-muted">
+                    Artık ne zaman bir projeye başlasam, HTML’le iskeleti kurup, CSS ile ona hayat veriyorum. Renkleri
+                    seçerken ruh halimi, boşlukları belirlerken düşünce mesafemi yansıtıyorum. CSS artık sadece bir stil
+                    dili değil, kendi anlatım biçimim gibi oldu. Her yazdığım satırda biraz estetik, biraz düzen, biraz
+                    da ben varım.
+                </p>
+                <p class="mb-3 text-muted">
+                    Ve biliyorum, CSS sonsuz bir dünya. Öğrenmenin sonu yok. Ama ne zaman bir `button` rengini
+                        ayarlasam ya da bir yazıyı ortalasam, o huzurla doluyorum. Çünkü bu kod sadece çalışıyor değil,
+                        aynı zamanda hissettiriyor. Ve işte bu yüzden, CSS benim için sadece tasarım değil; bir ifade
+                        biçimi.
+                </p>
+
+                <small class="text-muted">03.05.2025</small>
+            </div>
+            <div class="col-lg-5 col-md-10 offset-lg-1">
+                <img src="/img/css.png" class="img-fluid rounded-4 shadow-sm w-100" alt="Bootstrap">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-section links">
+                <a href="#">Ben Kimim?</a>
+                <a href="#">İletişim</a>
+            </div>
+            <div class="footer-section social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/aleyna-a-10451827a/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/AleynaAkdas?tab=projects"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Aleyna Akdaş | Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
